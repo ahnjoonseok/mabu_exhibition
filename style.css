@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {
+    overflow-y: hidden;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    display: block;
+}
+
+.container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background-color: bisque;
+}
+
+.contents {     
+    overflow-x: scroll;
+    background-color: rgb(176, 183, 184);
+
+    width: 2000px;
+    height: 100vh;
+    /* height: 300px; */
+}
+
+
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+
+.figure {
+    width: 300px;
+    height: 400px;
+    background-color: cadetblue;
+    position: relative;
+    top: 0;
+    left: 150px;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+{
+
+}
