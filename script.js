@@ -4,7 +4,7 @@ const contents = document.querySelector('.container');
 window.addEventListener('wheel', (ScrollHorizontal));
 function ScrollHorizontal(event) {
     
-    window.scroll(window.scrollX + event.deltaY / 4, scrollY);
+    window.scroll(window.scrollX + event.deltaY / 4, 0);
     console.log(event.deltaY);
 }
 
