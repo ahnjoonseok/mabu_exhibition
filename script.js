@@ -9,3 +9,18 @@ function ScrollHorizontal(event) {
 }
 
 
+//tooltip
+const pics = document.querySelectorAll('.pic');
+
+for(let i = 0; i < pics.length; i++)
+{
+    pics[i].addEventListener('click', () => {
+        Box(pics[i].dataset.text);
+    })
+}
+
+
+function Box(data)
+{
+    console.log(data);
+}

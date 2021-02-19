@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    width: 2730vh;
+    width: 2830vh;
     display: flex;
 }
 
@@ -28,7 +28,7 @@ body {
 
 
 .pic {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
 }
@@ -48,6 +48,16 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
+}
+
+.introText {
+    font-size: 22px;
+    height: 100vh;
+
+}
+
+.introP {
+    margin: 40vh 20vh;
 }
 
 
