@@ -7,16 +7,17 @@ body {
     
 }
 
-.warpper {
+a {
+    color: black;
+}
 
+.warpper {
     white-space: nowrap;
     height: 100vh;
     width: 100vw;
-    
     background-color: bisque;
     overflow-x: auto;
     overflow-y: hidden;
-
 }
 
 .container {
@@ -25,43 +26,109 @@ body {
 }
 
 
-
+/* PICS */
 
 .pic {
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 7px 3px rgba(0, 0, 0, 0.6);
 }
 
 .roundpic {
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 5px 5px 3px  rgba(0,0,0,0.6);
-    -moz-box-shadow: 5px 5px 3px  rgba(0,0,0,0.6);
-    -webkit-box-shadow: 5px 5px 3px  rgba(0,0,0,0.6);
-    -o-box-shadow: 5px 5px 3px  rgba(0,0,0,0.6);
+    box-shadow: 7px 7px 3px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 7px 7px 3px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 7px 7px 3px  rgba(0,0,0,0.6);
+    -o-box-shadow: 7px 7px 3px  rgba(0,0,0,0.6);
     border-radius: 100%;
 }
-
 
 .figure {
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 300;
+    pointer-events: none;
 }
 
-.introText {
-    font-size: 22px;
-    height: 100vh;
+/* INTRO */
 
+.intro {
+    font-size: 22px;
+    font-weight: 600;
+    height: 100vh;
 }
 
 .introP {
-    margin: 40vh 20vh;
+    /* width: 1000px; */
+    /* margin: 10vh 30vh; */
+}
+
+.introText {
+    margin: 40vh 10vh 30vh 20vh;
+    width: 600px;
+    white-space: normal;
+}
+
+/* POPUP */
+
+.popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 3px;
+
+    max-width: 400px;
+
+    padding: 2vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.popTitle {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.popDate {
+    font-size: 15px;
+    font-weight: 700;
+    
+
+    margin: 5px 0 0 0;
+}
+
+.popText {
+    margin-bottom: 0;
+    overflow: auto;
+    width: 360px;
+    white-space: normal;
 }
 
 
 @media screen and (max-width: 768px)
 {
+    .popup {
+        max-width: 40vw;
+    }
 
+    .popTitle {
+        font-size: 22px;
+        font-weight: 700;
+    
+        margin: 0;
+        white-space: normal;
+    }
+
+    .popText {
+        margin-bottom: 0;
+        overflow: auto;
+        width: auto;
+        white-space: normal;
+    }
 }
